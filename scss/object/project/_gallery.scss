@@ -1,0 +1,29 @@
+.gallery-warp {
+    width: 98%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    // background-color: red;
+
+    .c-title--topic {
+        color: #fff;
+        margin-bottom: 40px;
+    }
+
+    .gallery-bloc {
+        display: flex;
+        width: 98%;
+        justify-content: space-between;
+        margin: 0 auto;
+        
+        .gallery-card {
+            width: calc(98% /5);
+            height: 400px;
+            display: flex;
+            align-items: center;
+            &:hover{
+                transition: all 0.5s ease;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
