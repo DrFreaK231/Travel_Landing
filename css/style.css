@@ -1,0 +1,215 @@
+body {
+  background-color: #000;
+}
+
+.city-warp {
+  margin-bottom: 200px;
+}
+.city-warp .c-title--topic {
+  margin: 0 auto;
+  color: #fff;
+}
+.city-warp .city-bloc {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.city-warp .city-bloc .c-card-img {
+  width: 340px;
+}
+.city-warp .city-bloc .c-card-img .city-img {
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 36%, rgba(0, 0, 0, 0.65) 73%, rgba(0, 0, 0, 0.65) 99%, rgba(0, 0, 0, 0.65) 100%);
+  border: rgb(10, 13, 20);
+  z-index: 1;
+}
+.city-warp .city-bloc .c-card-img .city-img img {
+  z-index: 0;
+}
+.city-warp .city-bloc .c-card-img .city-img .c-title--city {
+  width: 280px;
+  position: absolute;
+  bottom: -100px;
+  left: 35px;
+}
+.city-warp .city-bloc .c-card-img .city-img .c-title--city h2 {
+  color: #F49F0A;
+}
+.city-warp .city-bloc .c-card-img .city-img .c-title--city p {
+  margin-bottom: 40px;
+  color: #fff;
+}
+.city-warp .city-bloc .c-card--lowmargin {
+  margin-top: 40px;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.c-btn {
+  width: 166px;
+  border: 1px solid #fff;
+  padding: 15px;
+}
+.c-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+.c-btn .icon {
+  color: #fff;
+  margin-left: 60px;
+}
+
+.gallery-warp {
+  width: 98%;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+.gallery-warp .c-title--topic {
+  color: #fff;
+  margin-bottom: 40px;
+}
+.gallery-warp .gallery-bloc {
+  width: 100%;
+}
+.gallery-warp .gallery-bloc .gallery-card {
+  max-width: 264px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact {
+  color: #fff;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 0 auto 100px;
+}
+.contact .c-title--topic {
+  color: #fff;
+  margin-top: 65px;
+}
+.contact .c-title--topic h2 {
+  width: 272px;
+  margin-bottom: 30px;
+  font-size: 34px;
+  font-weight: 800;
+}
+.contact .c-title--topic p {
+  width: 335px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.contact .circle {
+  width: 670px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.contact .circle__phone {
+  border: 1px solid #fff;
+  line-height: 1.5;
+  padding: 49px 67px 49px 47px;
+  border-radius: 100%;
+  width: 164px;
+}
+.contact .circle__phone .title {
+  font-size: 34px;
+  font-weight: 800;
+}
+.contact .circle__phone .phone {
+  font-size: 24px;
+  font-weight: 300;
+}
+.contact .circle__phone .text {
+  font-size: 16px;
+  font-weight: 400;
+}
+.contact .circle__mail {
+  border: 1px solid #fff;
+  line-height: 1.5;
+  padding: 69px 49px;
+  border-radius: 100%;
+}
+.contact .circle__mail p {
+  width: 180px;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.blog-warp {
+  width: 100%;
+  margin-bottom: 150px;
+}
+.blog-warp .c-title--topic {
+  color: #fff;
+}
+.blog-warp .blog-bloc {
+  width: 25%;
+  display: flex;
+}
+.blog-warp .blog-bloc .blog-card1 {
+  width: 100%;
+  height: 360px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 58%, rgba(0, 0, 0, 0.65) 100%, url(../../../img/blog1.png));
+  background-size: cover;
+  background-position: center;
+}
+.blog-warp .blog-bloc p {
+  color: #fff;
+  width: 360px;
+  bottom: 0;
+}/*# sourceMappingURL=style.css.map */

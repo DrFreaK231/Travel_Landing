@@ -1,0 +1,22 @@
+.gallery-warp{
+    width: 98%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    .c-title--topic{
+        color: #fff;
+        margin-bottom: 40px;
+    }
+    .gallery-bloc{
+            width: 100%;
+        .gallery-card{
+            max-width: 264px;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .mid-gallery-card{
+                
+            }
+        }
+    }
+}
