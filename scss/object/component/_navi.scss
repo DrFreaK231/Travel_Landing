@@ -1,0 +1,62 @@
+.nav-bar {
+    width: 60%;
+
+    ul {
+        display: flex;
+
+        li {
+            position: relative;
+            width: calc(100%/8);
+            overflow: hidden;
+            a {
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+                color: $text;
+                padding: 35px 0;
+                width: 100%;
+    
+                &:hover {
+                    border-bottom: 3px solid yellow;
+    
+                }
+            }
+        }
+
+
+    }
+
+    &--foot {
+        border-bottom: 2px solid white;
+        ul {
+            display: flex;
+
+            li {
+                
+                width: calc(100%/7);
+                a{
+                    &:hover{
+                        border-bottom: 0;
+                    }
+                }
+                
+            }
+
+        }
+
+    }
+
+}
+.logo {
+    padding: 30px;
+
+    h1 {
+        font-size: 24px;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: $text;
+        }
+    }
+}
