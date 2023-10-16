@@ -20,8 +20,14 @@ body {
 }
 .city-warp .city-bloc .c-card-img .city-img {
   position: relative;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 36%, rgba(0, 0, 0, 0.65) 73%, rgba(0, 0, 0, 0.65) 99%, rgba(0, 0, 0, 0.65) 100%);
-  border: rgb(10, 13, 20);
+}
+.city-warp .city-bloc .c-card-img .city-img::before {
+  content: "";
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), black);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
   z-index: 1;
 }
 .city-warp .city-bloc .c-card-img .city-img img {
@@ -32,6 +38,7 @@ body {
   position: absolute;
   bottom: -100px;
   left: 35px;
+  z-index: 2;
 }
 .city-warp .city-bloc .c-card-img .city-img .c-title--city h2 {
   color: #F49F0A;
@@ -102,6 +109,7 @@ table {
   width: 166px;
   border: 1px solid #fff;
   padding: 15px;
+  display: flex;
 }
 .c-btn a {
   text-decoration: none;
@@ -122,15 +130,22 @@ table {
   margin-bottom: 40px;
 }
 .gallery-warp .gallery-bloc {
-  width: 100%;
+  display: flex;
+  width: 98%;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 .gallery-warp .gallery-bloc .gallery-card {
-  max-width: 264px;
+  width: 19.6%;
   height: 400px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
+.gallery-warp .gallery-bloc .gallery-card:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+}
+
 .contact {
   color: #fff;
   display: flex;
@@ -198,18 +213,116 @@ table {
   color: #fff;
 }
 .blog-warp .blog-bloc {
-  width: 25%;
+  width: 100%;
   display: flex;
+  position: relative;
+  z-index: -1;
+}
+.blog-warp .blog-bloc::before {
+  content: "";
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), black);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  z-index: 1;
 }
 .blog-warp .blog-bloc .blog-card1 {
   width: 100%;
   height: 360px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 58%, rgba(0, 0, 0, 0.65) 100%, url(../../../img/blog1.png));
+  background-image: url(../../../img/blog1.png);
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+.blog-warp .blog-bloc .blog-card2 {
+  width: 100%;
+  height: 360px;
+  background-image: url(../../../img/blog2.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.blog-warp .blog-bloc .blog-card3 {
+  width: 100%;
+  height: 360px;
+  background-image: url(../../../img/blog3.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.blog-warp .blog-bloc .blog-card4 {
+  width: 100%;
+  height: 360px;
+  background-image: url(../../../img/blog4.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 .blog-warp .blog-bloc p {
   color: #fff;
-  width: 360px;
+  width: 280px;
   bottom: 0;
+  position: absolute;
+  left: 20px;
+  font-size: 18;
+  z-index: 2;
+}
+
+.journals-warp {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.journals-warp .c-title--topic {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.journals-warp .c-title--topic h2,
+.journals-warp .c-title--topic p {
+  color: #fff;
+  font-size: 15px;
+}
+.journals-warp .journals-bloc {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.journals-warp .journals-bloc .journals-card {
+  margin-bottom: 30px;
+}
+.journals-warp .journals-bloc .journals-card img {
+  width: 100%;
+}
+.journals-warp .journals-bloc .journals-card .card-inner {
+  background-color: #1F242E;
+  padding: 30px;
+}
+.journals-warp .journals-bloc .journals-card .card-inner .card-text {
+  display: flex;
+  padding: 15px 0;
+}
+.journals-warp .journals-bloc .journals-card .card-inner .card-text p {
+  color: #fff;
+  padding-left: 10px;
+}
+.journals-warp .journals-bloc .journals-card .card-inner .card-text img {
+  width: 20px;
+}
+.journals-warp .journals-bloc .journals-card .card-inner .txt {
+  margin-bottom: 15px;
+  color: #fff;
+}
+.journals-warp .journals-bloc .journals-card .card-inner .card-date {
+  display: flex;
+  justify-content: space-between;
+}
+.journals-warp .journals-bloc .journals-card .card-inner .card-date p {
+  color: rgb(200, 200, 200);
+}
+.journals-warp .journals-bloc .journals-card .card-inner .card-date a {
+  text-decoration: none;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

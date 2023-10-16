@@ -1,0 +1,61 @@
+.journals-warp {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .c-title--topic {
+        h2,
+        p {
+            color: #fff;
+            font-size: 15px;
+        }
+        margin-bottom: 10px;
+        text-align: center;
+
+    }
+
+    .journals-bloc {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .journals-card {
+            margin-bottom: 30px;
+            img {
+                width: 100%;
+            }
+            .card-inner {
+                background-color: #1F242E;
+                padding: 30px;
+                
+                .card-text {
+                    display: flex;
+                    padding: 15px 0;
+                    p{
+                        color: #fff;
+                        padding-left: 10px;
+                    }
+                    img {
+                        width: 20px;
+                    }
+                }
+                .txt{
+                    margin-bottom: 15px;
+                    color: #fff;
+                }
+                .card-date{
+                    display: flex;
+                    justify-content: space-between ;
+                    p{
+                        color: rgb(200, 200, 200);
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }     
+    }
+}
