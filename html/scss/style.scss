@@ -1,0 +1,12 @@
+@mixin screen-size {
+    width: 80%;
+    margin: 0 auto;
+}
+$text : #fff;
+$playfair : 'Playfair Display', serif;
+$muli : 'Mulish', sans-serif;
+@import 'layout/header';
+@import 'object/component/navi';
+@import 'object/project/visual';
+@import 'foundation/fonts';
+@import 'object/component/title';
