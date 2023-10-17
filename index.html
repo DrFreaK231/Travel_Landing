@@ -6,13 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Slick Slider CSS CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- Slick Slider Theme CSS CDN (Optional) -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Slick Slider JavaScript CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/c9548e0d7f.js" crossorigin="anonymous"></script>
     <title>Travel_Landing</title>
 </head>
 
 <body>
     <header class="l-head">
-        <div class="logo">
+        <div class="logo logo-head">
             <h1><a href="#" target="_self">Raido.</a></h1>
         </div>
         <nav class="nav-bar">
@@ -39,7 +52,7 @@
             </div>
             <div class="c-btn c-btn--explore">
                 <a href="#" target="_self">Explore more</a>
-                <a href="#" target="_self" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#" target="_self" class="icon"><i class="fa-solid fa-compass"></i></a>
             </div>
         </div>
         <div class="visual__about">
@@ -51,28 +64,28 @@
             </div>
             <div class="board">
                 <div class="board__count">
-                    <p>2 <span>68</span></p>
+                    <p class="counts">2 <span>68</span></p>
                     <p>Completed Trips</p>
                 </div>
                 <div class="board__count">
-                    <p>1 <span>76</span></p>
+                    <p class="counts">1 <span>76</span></p>
                     <p> Tour Guides</p>
                 </div>
                 <div class="board__count">
-                    <p>1 <span>53</span></p>
+                    <p class="counts">1 <span>53</span></p>
                     <p> Destinations</p>
                 </div>
             </div>
-            <div class="c-btn c-btn--arrow">
-                <a href="#" target="_self">Explore More</a>
+            <div class="c-btn c-btn--read">
+                <a href="#" target="_self">Read more</a>
                 <a href="#" target="_self" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
     <article>
         <div class="city-warp">
-            <div class="c-title c-title--topic">
-                <h2>Discover the most engaging places </h2>
+            <div class="c-title">
+                <h3>Discover the most engaging places </h3>
                 <p>Lets's see the world with us with you and your family.</p>
             </div>
             <div class="city-bloc">
@@ -84,7 +97,7 @@
                             <p>Norway is a Scandinavian country encmpassing moutains, glaciers and deep coastal fjords.
                             </p>
                             <div class="c-btn c-btn--arrow">
-                                <a href="#" target="_self">Explore more</a>
+                                <a href="#" target="_self">Discover More</a>
                                 <a href="#" target="_self" class="icon"> <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -100,7 +113,7 @@
                                 history
                                 stretching back to Raman times.</p>
                             <div class="c-btn c-btn--arrow">
-                                <a href="#" target="_self">Explore more</a>
+                                <a href="#" target="_self">Discover more</a>
                                 <a href="#" target="_self" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -116,7 +129,7 @@
                                 remaining
                                 deeply connected to traditions.</p>
                             <div class="c-btn c-btn--arrow">
-                                <a href="#" target="_self">Explore more</a>
+                                <a href="#" target="_self">Discover more</a>
                                 <a href="#" target="_self" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -126,8 +139,8 @@
         </div>
 
         <div class="blog-warp">
-            <div class="c-title c-title--topic">
-                <h2>Latest on the Blogs</h2>
+            <div class="c-title c-title--blog">
+                <h4>Latest on the Blogs</h4>
                 <p>We want to help you to travel better!</p>
             </div>
             <div class="blog-bloc">
@@ -150,8 +163,8 @@
         </div>
 
         <div class="journals-warp">
-            <div class="c-title c-title--topic">
-                <h2>The Travel Journals</h2>
+            <div class="c-title c-title--journals">
+                <h5>The Travel Journals</h5>
                 <p>A journal is a place to record new things you have discovered while exploring various places you
                     visit.</p>
             </div>
@@ -167,7 +180,7 @@
                         <p class="txt">How to use less plastic when you travel.</p>
                         <div class="card-date">
                             <p>18 Apr 2022</p>
-                            <a href="#" target="_self"><i class="fa-solid fa-share-nodes"></i></a>
+                            <a href="#" target="_self"><img src="/img/share.png" alt="share"></a>
                         </div>
                     </div>
                 </div>
@@ -182,7 +195,7 @@
                         <p class="txt">The best weekend road trips from Denver.</p>
                         <div class="card-date">
                             <p>18 Apr 2022</p>
-                            <a href="#" target="_self"><i class="fa-solid fa-share-nodes"></i></a>
+                            <a href="#" target="_self"><img src="/img/share.png" alt="share"></a>
                         </div>
                     </div>
                 </div>
@@ -197,7 +210,7 @@
                         <p class="txt">Tips and tricks to plan your next adventure.</p>
                         <div class="card-date">
                             <p>18 Apr 2022</p>
-                            <a href="#" target="_self"><i class="fa-solid fa-share-nodes"></i></a>
+                            <a href="#" target="_self"><img src="/img/share.png" alt="share"></a>
                         </div>
                     </div>
                 </div>
@@ -212,7 +225,7 @@
                         <p class="txt">A beginner's guide to hostels</p>
                         <div class="card-date">
                             <p>18 Apr 2022</p>
-                            <a href="#" target="_self"><i class="fa-solid fa-share-nodes"></i></a>
+                            <a href="#" target="_self"><img src="/img/share.png" alt="share"></a>
                         </div>
                     </div>
                 </div>
@@ -227,7 +240,7 @@
                         <p class="txt">17 unconventional travel hacks you need.</p>
                         <div class="card-date">
                             <p>18 Apr 2022</p>
-                            <a href="#" target="_self"><i class="fa-solid fa-share-nodes"></i></a>
+                            <a href="#" target="_self"><img src="/img/share.png" alt="share"></a>
                         </div>
                     </div>
                 </div>
@@ -242,44 +255,64 @@
                         <p class="txt">Travel tip's you'll wish you'd known sooner</p>
                         <div class="card-date">
                             <p>18 Apr 2022</p>
-                            <a href="#" target="_self"><i class="fa-solid fa-share-nodes"></i></a>
+                            <a href="#" target="_self"><img src="/img/share.png" alt="share"></a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="c-btn c-btn--arrow">
-                <a href="#" target="_self">Explore more</a>
+            <div class="c-btn c-btn--explore">
+                <a href="#" target="_self">View all journals</a>
                 <a href="#" target="_self" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
-        <!-- <div class="page-logo">
+        <div class="page-logo">
 
-        </div> -->
+            <video id="background-video" autoplay loop muted>
+                <source src="/img/background.mp4" type="video/mp4">
+            </video>
+
+        </div>
         <div class="gallery-warp">
-            <div class="c-title c-title--topic">
-                <h2>Gallery Photos</h2>
+            <div class="c-title c-title--gallery">
+                <h6>Gallery Photos</h6>
                 <p>Explore the most beautiful places in the world.</p>
             </div>
             <div class="gallery-bloc">
                 <div class="gallery-card">
                     <img src="../img/gallery2.png" alt="img">
+                    <div class="gallery-text">
+                        <p class="city">Bali</p>
+                        <p>Indonesia</p>
+                    </div>
                 </div>
                 <div class="gallery-card">
                     <img src="../img/gallery3.png" alt="img">
+                    <div class="gallery-text">
+                        <p class="city">Bali</p>
+                        <p>Indonesia</p>
+                    </div>
                 </div>
                 <div class="gallery-card">
                     <img src="../img/gallery6.png" alt="img">
                     <div class="gallery-text">
-                        <!-- <p>Bali</p>
-                        <p>Indonesia</p> -->
+                        <p class="city">Bali</p>
+                        <p>Indonesia</p>
                     </div>
                 </div>
                 <div class="gallery-card">
                     <img src="../img/gallery4.png" alt="img">
+                    <div class="gallery-text">
+                        <p class="city">Bali</p>
+                        <p>Indonesia</p>
+                    </div>
                 </div>
                 <div class="gallery-card">
                     <img src="../img/gallery5.png" alt="img">
+                    <div class="gallery-text">
+                        <p class="city">Bali</p>
+                        <p>Indonesia</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -302,21 +335,47 @@
             </div>
         </div>
     </article>
-
-    <!--   -->
-    <!-- <footer>
-
-    </footer>  -->
+    <footer class="foot-warp">
+        <div class="logo">
+            <h1><a href="#" target="_self">Raido.</a></h1>
+        </div>
+        <ul class="icon-line">
+            <li><a href="#" target="_self"><i class="fa-brands fa-facebook" id="facebook"></i> </a></li>
+            <li><a href="#" target="_self"><i class="fa-brands fa-twitter" id="twitter"></i></a></li>
+            <li><a href="#" target="_self"><i class="fa-brands fa-instagram" id="instagram"></i></a></li>
+            <li><a href="#" target="_self"><i class="fa-brands fa-linkedin-in" id="linkedin"></i></a></li>
+        </ul>
+        <div class="foot-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ipsum commodi reprehenderit, maiores
+                labore ipsam cupiditate inventore soluta quam placeat accusantium blanditiis repudiandae culpa molestias
+                temporibus eius delectus eveniet velit.</p>
+        </div>
+        <nav class="nav-bar nav-bar--foot">
+            <ul>
+                <li><a href="#" target="_self">Home</a></li>
+                <li><a href="#" target="_self">About Us</a></li>
+                <li><a href="#" target="_self">Discover</a></li>
+                <li><a href="#" target="_self">Blog</a></li>
+                <li><a href="#" target="_self">Journals</a></li>
+                <li><a href="#" target="_self">Gallery</a></li>
+                <li><a href="#" target="_self">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="address">
+            <address>@ 2020 All rights reserved</address>
+        </div>
+    </footer>
     <script type="text/javascript ">
 
         $(document).ready(function () { $('.gallery-bloc').slick({
-            
+            centerMode: true,
+            centerPadding: '60px',
             slidesToShow:3,
             autoplay:true,
             dots:true,
             arrow:true
         }) }) 
     </script>
-</body> 
+</body>
 
 </html>

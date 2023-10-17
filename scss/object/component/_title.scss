@@ -1,4 +1,5 @@
 .c-title{
+    text-align: center;
     h1,h2,h3,h4,h5,h6{
         font-family: $playfair;
         font-size: 64px;
@@ -11,6 +12,7 @@
         margin-bottom: 30px;
     }
     &--topic{
+        text-align: start;
         width: 60%;
         margin-right: auto;
         .design{
@@ -31,6 +33,7 @@
         }
     }
     &--about{
+        text-align: start;
         width: 60%;
         margin-right: auto;
     }

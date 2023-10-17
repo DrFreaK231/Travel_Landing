@@ -2,16 +2,21 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 100px;
 
-    .c-title--topic {
-        h2,
-        p {
-            color: #fff;
-            font-size: 15px;
+    .c-title--journals {
+        margin-bottom: 50px;
+
+        h5 {
+            font-size: 42px;
+            margin-bottom: 30px;
         }
-        margin-bottom: 10px;
-        text-align: center;
 
+        p {
+            font-size: 16px;
+            width: 500px;
+            margin: 0 auto;
+        }
     }
 
     .journals-bloc {
@@ -20,42 +25,61 @@
         width: 80%;
         justify-content: space-between;
         flex-wrap: wrap;
+
         .journals-card {
             margin-bottom: 30px;
+
             img {
                 width: 100%;
             }
+
             .card-inner {
                 background-color: #1F242E;
                 padding: 30px;
-                
+
                 .card-text {
                     display: flex;
                     padding: 15px 0;
-                    p{
+                    align-items: center;
+
+                    p {
                         color: #fff;
                         padding-left: 10px;
                     }
+
                     img {
-                        width: 20px;
+                        width: 28px;
                     }
                 }
-                .txt{
+
+                .txt {
                     margin-bottom: 15px;
                     color: #fff;
                 }
-                .card-date{
+
+                .card-date {
+                    width: 100%;
                     display: flex;
-                    justify-content: space-between ;
-                    p{
+                    justify-content: space-between;
+
+                    align-items: center;
+
+                    p {
                         color: rgb(200, 200, 200);
+                        font-size: 14px;
                     }
-                    a{
+
+                    a {
                         text-decoration: none;
-                        color: #fff;
+                        color: $text;
+                        width: 24px;
+                        img{
+                            width: 100%;
+                        }
+
                     }
                 }
             }
-        }     
+        }
     }
 }

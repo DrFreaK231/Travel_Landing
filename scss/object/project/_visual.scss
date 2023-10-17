@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     z-index: -3;
+    margin-bottom: 50px;
     &::before{
         content: '';
         background: linear-gradient(to bottom, rgb(0,0,0,0.3), black);
@@ -56,19 +57,27 @@
         height: auto;
         display: flex;
         justify-content:flex-end;
+        .c-title--about{
+            width: 40%;
+            
+        }
         .board{
-            width: 80%;
-            background-color: #707070;
+            width: 70%;
+            background-color: #1F242E;
             display: flex;
             padding: 30px;
+            margin-bottom: 30px;
             .board__count{
+                color: $text;
                 text-align: center;
                 width: calc(100%/3);
-                p{
-                    font-family: $muli;
-                    border-right: 1px solid black;
+                .counts{
+                    font-size: 42px;
+                    padding-bottom: 10px;
+                    font-family: $playfair;
+                    border-right: 2px solid black;
                     span{
-                        font-size: 20px;
+                        font-size: 44px;
                     }
                 }
                 &:last-child{

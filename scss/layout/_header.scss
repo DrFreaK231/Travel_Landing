@@ -7,7 +7,19 @@
     align-items: center;
     background-color: rgb(0, 0, 0, 0.3);
     z-index: 100;
-    
-
-    
+    .logo-head{
+        h1{
+            animation: glow 1s infinite alternate;
+        }
+    }
+}
+@keyframes glow {
+    from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #74c2fb, 0 0 40px #74c2fb, 0 0 50px #74c2fb, 0 0 60px #74c2fb, 0 0 70px #74c2fb;
+  }
+  
+  to {
+    filter: brightness(2);
+    text-shadow: 0 0 20px #fff, 0 0 30px #00a6ff, 0 0 40px #00a6ff, 0 0 50px #00a6ff, 0 0 60px #00a6ff, 0 0 70px #00a6ff, 0 0 80px #00a6ff;
+  }
 }

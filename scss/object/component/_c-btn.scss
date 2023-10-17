@@ -1,14 +1,29 @@
 .c-btn{
-    width: 166px;
-    border: 1px solid #fff;
-    padding: 15px;
+    width: 196px;
+    border: 1px solid $text2;
     display: flex;
+    background-color: #f49f0a;
+    align-items: center;
     a{
         text-decoration: none;
-        color: #fff;
+           color: $text2;
+           display: flex;
+           justify-content: center;
+           width: 90%;
     }
    .icon{
-        color: #fff;
-        margin-left: 60px;
+        padding: 15px;
+        width: 10%;
+        background-color: #e89400;
+   }
+   &--arrow{
+        background-color: transparent;
+        border: 1px solid $text;
+        a{
+            color: $text;
+        }
+        .icon{
+            background-color: transparent;
+        }
    }
 }

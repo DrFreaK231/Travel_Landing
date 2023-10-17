@@ -2,9 +2,13 @@
     width: 80%;
     margin: 0 auto;
 }
+body{
+    background-color: #000;
+}
 $text : #fff;
 $playfair : 'Playfair Display', serif;
 $muli : 'Mulish', sans-serif;
+$text2:#000;
 @import 'layout/header';
 @import 'object/component/navi';
 @import 'object/project/visual';
@@ -18,3 +22,5 @@ $muli : 'Mulish', sans-serif;
 @import 'object/project/contact';
 @import 'object/project/blog';
 @import 'object/project/journals';
+@import 'object/project/logo'
+
