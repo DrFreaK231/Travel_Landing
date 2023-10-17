@@ -1,12 +1,11 @@
 .contact{
     color: #fff;
     display: flex;
-    width: 80%;
     justify-content: space-between;
-    margin: 0 auto 100px;
-    .c-title--topic{
-        color: #fff;
-        margin-top: 65px;
+    align-items: center;
+    padding: 100px 10%;
+    background: linear-gradient(to top, rgba(4, 196, 255, 0.2), black);
+    .c-title{
         h2{
             width: 272px;
             margin-bottom: 30px;
@@ -20,7 +19,7 @@
         }
     }
     .circle{
-        width: 670px;
+        width: 70%;
         display: flex;
         justify-content: space-between;
         text-align: center;

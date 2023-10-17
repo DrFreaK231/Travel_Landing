@@ -1,3 +1,16 @@
+body{
+    background-color: #000;
+}
+$text : #fff;
+$playfair : 'Playfair Display', serif;
+$muli : 'Mulish', sans-serif;
+$text2:#000;
+@import 'layout/header';
+@import 'object/component/navi';
+@import 'object/project/visual';
+@import 'foundation/fonts';
+@import 'object/component/title';
+@import 'layout/footer';
 @import 'object/project/city';
 @import 'foundation/reset';
 @import 'object/component/c-btn';
@@ -5,3 +18,5 @@
 @import 'object/project/contact';
 @import 'object/project/blog';
 @import 'object/project/journals';
+@import 'object/project/logo'
+

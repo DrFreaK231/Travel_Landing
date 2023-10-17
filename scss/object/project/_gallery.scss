@@ -2,11 +2,12 @@
     width: 98%;
     margin: 0 auto;
     margin-bottom: 150px;
-    // background-color: red;
 
-    .c-title--topic {
-        color: #fff;
-        margin-bottom: 40px;
+    .c-title--gallery{
+        margin-bottom: 100px;
+        h6{
+            margin-bottom: 50px;
+        }
     }
 
     .gallery-bloc {
@@ -17,12 +18,31 @@
         
         .gallery-card {
             width: calc(98% /5);
-            height: 400px;
+            height: 90%;
             display: flex;
+            position: relative;
             align-items: center;
+            justify-content: center;
+            .gallery-text{
+                overflow: hidden;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 20px;
+                display: none;
+                
+                p{
+                    color: $text;
+                }
+                .city{
+                    font-size: 24px;
+                }
+            }
             &:hover{
                 transition: all 0.5s ease;
                 transform: scale(1.1);
+                .gallery-text{
+                    display: block;
+                }
             }
         }
     }

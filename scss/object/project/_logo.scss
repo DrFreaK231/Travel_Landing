@@ -1,0 +1,22 @@
+.page-logo{
+    overflow: hidden;
+    height: 70vh;
+    mask-image: url('../../../img/raido.png');
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-size: contain;
+    width: 60%;
+    margin: 0 auto;
+    #background-video{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+      
+
+}
+
+
+
+  
