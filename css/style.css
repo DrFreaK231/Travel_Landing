@@ -535,7 +535,6 @@ table {
   display: flex;
   position: relative;
   z-index: -1;
-  white-space: nowarp;
 }
 .blog-warp .blog-bloc::before {
   content: "";
